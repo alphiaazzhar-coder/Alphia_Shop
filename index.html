@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alphia Shop | Modern Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">Complimentary shipping on orders over ₹2,999 <span>•</span> Easy 14-day returns</div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Alphia Shop home">ALPHIA<span>.</span></a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#new">New arrivals</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">Our story</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button search-toggle" aria-label="Open search">⌕</button>
+      <button class="icon-button" aria-label="View wishlist">♡ <span class="wish-count">0</span></button>
+      <button class="cart-button" aria-label="View shopping cart">Bag <span class="cart-count">0</span></button>
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <div class="search-panel" id="search-panel">
+    <label for="site-search">Find your next favourite</label>
+    <div class="search-field">
+      <input id="site-search" type="search" placeholder="Search dresses, bags, shoes..." />
+      <button id="search-button">Search</button>
+    </div>
+    <p id="search-message" aria-live="polite"></p>
+  </div>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">The summer edit</p>
+        <h1>Dress like every day is <em>your</em> occasion.</h1>
+        <p class="hero-description">Easy silhouettes, sun-washed colour, and pieces made to stay in your wardrobe for seasons.</p>
+        <a class="primary-link" href="#new">Shop the collection <span>→</span></a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Fashion model in a light summer outfit"></div>
+      <div class="hero-note"><span>01</span> / Summer, reimagined</div>
+    </section>
+
+    <section class="categories" id="shop">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">Shop by mood</p>
+          <h2>Made for your every day</h2>
+        </div>
+        <a href="#featured">View all <span>→</span></a>
+      </div>
+      <div class="category-grid">
+        <a class="category-card category-women" href="#featured"><span>Women's edit</span><small>Explore now →</small></a>
+        <a class="category-card category-accessories" href="#featured"><span>Accessories</span><small>Explore now →</small></a>
+        <a class="category-card category-footwear" href="#featured"><span>Footwear</span><small>Explore now →</small></a>
+      </div>
+    </section>
+
+    <section class="product-section" id="featured">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Curated for you</p>
+          <h2>Most wanted</h2>
+        </div>
+        <p>Small details. Big energy.</p>
+      </div>
+      <div class="product-grid" id="featured-products"></div>
+    </section>
+
+    <section class="editorial" id="about">
+      <div class="editorial-image" role="img" aria-label="Woman walking in a city wearing modern fashion"></div>
+      <div class="editorial-copy">
+        <p class="eyebrow">The Alphia way</p>
+        <h2>Pieces you'll reach for, on repeat.</h2>
+        <p>We believe getting dressed should feel uncomplicated and a little bit special. Our collections bring together considered shapes, joyful texture and versatile colour.</p>
+        <a class="text-link" href="#new">Meet Alphia <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="product-section new-arrivals" id="new">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Just landed</p>
+          <h2>New arrivals</h2>
+        </div>
+        <a href="#new">Shop new <span>→</span></a>
+      </div>
+      <div class="product-grid" id="new-products"></div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">A little note from us</p>
+      <h2>Good things, delivered.</h2>
+      <p>Sign up for first access to new collections, private offers and more.</p>
+      <form id="newsletter-form">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="Your email address" required />
+        <button type="submit">Join us →</button>
+      </form>
+      <p class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><a class="brand" href="#home">ALPHIA<span>.</span></a><p>Modern essentials for a well-lived life.</p></div>
+    <div><h3>Shop</h3><a href="#new">New arrivals</a><a href="#featured">Best sellers</a><a href="#shop">Clothing</a></div>
+    <div><h3>Help</h3><a href="#">Shipping & returns</a><a href="#">Size guide</a><a href="#">Contact us</a></div>
+    <div><h3>Follow along</h3><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">TikTok</a></div>
+    <p class="copyright">© 2026 Alphia Shop. Made with intention.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
