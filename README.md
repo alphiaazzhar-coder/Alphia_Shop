@@ -1,4 +1,5 @@
-# Alphia_Shop
+# Alphia Shop — Stage 1
+
 A responsive, beginner-friendly fashion shopping homepage built with HTML, CSS, and JavaScript.
 
 ## Run it
